@@ -1,0 +1,21 @@
+//מציג סדרה של מספרים ראשוניים 
+#include <stdio.h>
+
+void main() {
+    int a, i, k, e = 1;
+   printf("Enter a natural number\n");
+   scanf("%d", & a);
+    printf("2 3 ");
+    for (i = 4; i <= a; i++) {
+
+      for (k = 2; k < i; k++)
+
+        if (i % k == 0)
+          e = 0;
+
+      if (e == 1)
+        printf("%d ", i);
+      e = 1;
+    }
+
+  }
